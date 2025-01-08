@@ -36,7 +36,7 @@ spec:
             - name: image.tag
               value: '{{.appVersion}}'
           valueFiles:
-          - $values/option6/environments/{{.variables.common.environment}}/products/values/{{.product}}/{{.name}}/values.yaml
+          - $values/ArgoCD/environments/{{.variables.common.environment}}/products/values/{{.product}}/{{.name}}/values.yaml
       - repoURL: 'https://github.com/sadoha/demo-edu.git'
         targetRevision: HEAD
         ref: values

@@ -33,7 +33,7 @@ spec:
         targetRevision: '{{.chartVersion}}'
         helm:
           valueFiles:
-          - $values/option6/environments/{{.variables.common.environment}}/infrastructure/values/{{.chart}}/values.yaml
+          - $values/ArgoCD/environments/{{.variables.common.environment}}/infrastructure/values/{{.chart}}/values.yaml
       - repoURL: 'https://github.com/sadoha/demo-edu.git'
         targetRevision: HEAD
         ref: values
