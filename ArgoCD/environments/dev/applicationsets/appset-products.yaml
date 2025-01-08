@@ -30,7 +30,7 @@ spec:
       sources:
       - repoURL: https://github.com/sadoha/demo-edu.git
         targetRevision: HEAD
-        path: 'helm/{{.chart}}'
+        path: 'Helm/{{.chart}}'
         helm:
           parameters:
             - name: image.tag
